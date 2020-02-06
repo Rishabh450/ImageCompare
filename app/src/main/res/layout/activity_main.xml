@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+
+        android:orientation="vertical"
+        android:layout_height="400dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/img1"
+            android:src="@drawable/placeholder"
+            android:layout_height="350dp"></ImageView>
+        <Button
+            android:layout_width="match_parent"
+            android:text="Add Image 1"
+            android:id="@+id/upload1"
+            android:textAllCaps="false"
+            android:background="@android:color/darker_gray"
+            android:layout_height="50dp">
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="400dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/img2"
+            android:src="@drawable/placeholder"
+            android:layout_height="350dp"></ImageView>
+        <Button
+            android:layout_width="match_parent"
+            android:text="Add Image 2"
+            android:id="@+id/upload2"
+            android:textAllCaps="false"
+            android:background="@android:color/darker_gray"
+            android:layout_height="50dp">
+
+        </Button>
+
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:text="Compare"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/compare"
+        android:background="@android:color/darker_gray"
+        android:layout_height="50dp">
+
+    </Button>
+
+
+
+</LinearLayout>
